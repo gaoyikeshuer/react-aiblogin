@@ -1,0 +1,116 @@
+$purple : #7F2B7B;
+$yellow :#C78500;
+$green: #00856A;
+$AIB-grey-04: #9E9E9E;
+$AIB-grey-400: #C3C3C3;
+$AIB-red: #E32837;
+
+section{
+    width: 390px;
+    height: 844px; /*iphone 12*/
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.icon{
+    margin-top: 80px;
+}
+.icon img{
+    width: 60px;
+    height: 60px;
+}
+.login-title{
+    font-family: 'AspiraMedium';
+    color: $purple;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 38px;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+label{
+   display: block;
+   text-align: left;
+   color: $purple;
+   font-family: 'AspiraMedium';
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 18px;
+   margin: 6px 0;
+}
+.login-usertext{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+p{
+    font-family: 'AspiraRegular';
+    font-size: 12px;
+    margin: 0 5px;
+    height: 15px;
+    line-height: 15px;
+
+
+}
+input{
+
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid $AIB-grey-400 ;
+    border-radius: 4px;
+}
+input:focus{
+    outline: none; // important : but donno why
+   border: 1px solid $purple;
+ 
+}
+
+
+.instructions{
+    color: $yellow;
+}
+.offscreen{
+    position: absolute;
+    left: -9999px;
+}
+button{
+    margin-top: 20px;
+    font-family: 'AspiraDemi';
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 12px;
+    border: none;
+    
+
+}
+button[disabled=disabled], button:disabled {
+   background-color: $AIB-grey-04;
+   color: white;
+}
+.login-alert{
+    border-color: $yellow;
+    
+}
+.fail-exist{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    p{
+        color:$AIB-red ;
+    }
+}
+.fail-input{
+    border-color: $AIB-red;
+}
